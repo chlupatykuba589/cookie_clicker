@@ -1,0 +1,19 @@
+*{box-sizing: border-box;}
+html, body { margin: 0; padding: 0; background: #000 }
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 0;
+            grid-auto-rows: 500px;
+            grid-template-areas: ". a ." ". a .";
+        }
+        .centered {
+            grid-area: a;
+            align-self: center;
+            justify-self: center;
+        }
+        canvas {
+            background: white;
+            border-radius: 10px;
+            
+        }
